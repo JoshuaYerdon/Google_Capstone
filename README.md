@@ -4,15 +4,13 @@ _([Click here for the full scenario description](https://github.com/JoshuaYerdon
 
 ## Topic
 I chose the [TED Talk](https://www.kaggle.com/datasets/ashishjangra27/ted-talks) dataset from [Kaggle](https://www.kaggle.com/) for my project . This dataset contains information about various TED Talks, including details like the speaker, duration, views, and categories of the talks. The problem I will be exploring is identifying which topics are most effective at attracting viewers, which speakers are best suited for gaining viewership, and analyzing other factors that contribute to a TED Talk's popularity. My chosen metrics will help assess the impact of different speakers and topics on viewer engagement, the following metrics have been chosen:  
-- The following metrics have been chosen to talk about:
 
-    - Total yearly viewership 
-    - Total yearly speeches given
-    - Individual Speakers
-    - "Adjusted likes value"
-    - "Adjusted views value"
-   
-
+- Total yearly viewership 
+- Total yearly speeches given
+- Individual Speakers
+- "Adjusted likes value"
+- "Adjusted views value"
+  
 ## Other Topic Information
 **_1: Who are the stakeholders?_** <br> 
 **_2: Who is your audience?_** <br> 
