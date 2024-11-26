@@ -96,7 +96,7 @@ ORDER BY
 The data suggests that audiences may be drawn to speeches based on their favorite speakers. To identify the ideal speakers and topics with a greater certainty, we need a method that reveals how much people enjoy a particular speech or speaker.
 
 ![Most Author Speeches](/Assets/Most%20Author%20Speeches%20Given.png) <br>
-**Visualization of Average Views by Month** - **_[Click here to access the chart](/Assets/Most%20Author%20Speeches%20Given.png)_**
+**Visualization of Most Author Speeches** - **_[Click here to access the chart](/Assets/Most%20Author%20Speeches%20Given.png)_**
 
 ## 4: Adjusted Likes and Views Value
 What is an "Adjust Likes Value" you may ask? This is a method I developed to fairly evaluate speeches, rather than just looking at views or likes by themselves. 
