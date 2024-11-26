@@ -158,7 +158,7 @@ ORDER BY
     RANDOM()
 ```
 
-Additionally I have made a query that bases the decision off of their Adjust Likes Value too:
+Additionally I have made a query that bases the decision off of their Adjusted Likes Value too:
 
 ```SQL
 SELECT
