@@ -48,7 +48,7 @@ ORDER BY
 LIMIT 25
 ```
 
-Below is a chart displaying the results of this query. As you can see, years like 2015, 2013, and 2017 stand out as having the most views for their speeches. At first glance, we might ask ourselves: _What did these years do differently to achieve more success?_ A logical explanation could be that they simply had more speeches. Let’s investigate this further.
+Below is a chart displaying the results of this query. As you can see, years like 2015, 2013, and 2017 stand out as having the most views for their speeches. At first glance, we might ask ourselves: **_What did these years do differently to achieve more success?_** A logical explanation could be that they simply had more speeches. Let’s investigate this further.
 
 ![Most Viewed Speeches by Year](/Assets/Most%20Viewed%20Speeches.png) <br>
 **Visualization of Most Viewed Speeches by Year** - **_[Click here to access the chart](/Assets/Most%20Viewed%20Speeches.png)_**
@@ -143,7 +143,7 @@ Now that we know the most optimal speeches, we can use this to determine which s
 
 ```SQL
 SELECT
-    title,
+    author,
     ROUND(AVG(views), 0) AS total_avg_views,
     CASE
         WHEN ROUND(AVG(views), 0) > (SELECT AVG(views) FROM ted_talks_stats) 
@@ -154,7 +154,7 @@ FROM
     ted_talks
 LEFT JOIN ted_talks_stats ON ted_talks.link = ted_talks_stats.link
 GROUP BY
-    title
+    author
 ORDER BY
     RANDOM()
 ```
@@ -181,7 +181,7 @@ ORDER BY
 ## 6: Conclusion
 This project examined key factors behind the success of TED Talks by analyzing metrics like total views, adjusted likes, adjusted views, and the number of speeches given by authors. Key takeaways include:
 
-- Higher viewership years don't always correlate with more speeches, indicating that timing and frequency are crucial for engagement.
-- Repeat speakers can significantly influence audience viewership.
-- Adjusted Like and Views Value provides a clearer understanding of audience engagement, highlighting what resonates with viewers.
-- Using these insights, I developed a system to assess which speakers should return, helping TED optimize speaker selection and topic planning for future events.
+- Quality of the speaker and speeches are paramount.
+- Higher viewership years don't correlate with more speeches.
+- Using these insights, I created an optimal system to evaluate which speakers and speeches resonate most with audiences.
+- A year with a higher Adjusted Views Value will yield better results than having a greater quantity of speeches, as demonstrated by the comparison between 2015 and 2019.
