@@ -23,7 +23,7 @@ I chose the [TED Talk](https://www.kaggle.com/datasets/ashishjangra27/ted-talks)
 The data for this project will primarily come from CSV files, they can be found [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/SVC%20Files) or in this project's repository.The data has been slightly modified into two CSV files, labeled "ted_talks_stats" and "ted_talks," as I wanted multiple tables for my database rather than just one. I have included a copy of the original if anyone would like to look at it, labeled "ted_talks_original". This dataset has a 10/10 usability score from Kaggle, which indicates it is highly credible and usable. The license for this dataset can be found [HERE](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Project Findings & Analysis
-###### *All of the projects visualizations are accessable[HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/Assets).*
+###### *All of the projects visualizations are accessable [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/Assets).*
 
 ## 1: Years With Most Speech Views
 I started by wondering which years had the most views and thought it might show steady growth over time. To figure this out, I wrote a query to find the years with the highest total speech views. To do this:
