@@ -1,6 +1,6 @@
 ## Quick Introduction
 This is my capstone project for the [Google Data Analytics Professional certificate](https://www.coursera.org/professional-certificates/google-data-analytics#courses). For this project, I chose "Case Study 3," where I had the opportunity to build my own case study instead of working with one of the two pre-designed options. I mainly used Visual Studio Code for querying, PostgreSQL for database management, and Google Sheets for visualizations. <br>
-([Click here for the full scenario description](https://github.com/JoshuaYerdon/Google_Capstone/blob/main/Assets/Project%20Scenario.png))
+_([Click here for the full scenario description](https://github.com/JoshuaYerdon/Google_Capstone/blob/main/Assets/Project%20Scenario.png))_
 
 ## Topic
 I chose the [TED Talk](https://www.kaggle.com/datasets/ashishjangra27/ted-talks) dataset from [Kaggle](https://www.kaggle.com/) for my project . This dataset contains information about various TED Talks, including details like the speaker, duration, views, and categories of the talks. The problem I will be exploring is identifying which topics are most effective at attracting viewers, which speakers are best suited for gaining viewership, and analyzing other factors that contribute to a TED Talk's popularity. My chosen metrics will help assess the impact of different speakers and topics on viewer engagement, the following metrics have been chosen:  
