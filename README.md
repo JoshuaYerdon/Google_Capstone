@@ -1,9 +1,11 @@
 ## Quick Introduction
-This is my capstone project for the [Google Data Analytics Professional certificate](https://www.coursera.org/professional-certificates/google-data-analytics#courses). For this project, I chose "Case Study 3," where I had the opportunity to build my own case study instead of working with one of the two pre-designed options. I mainly used Visual Studio Code for querying, PostgreSQL for database management, and Google Sheets for visualizations.
+This is my capstone project for the [Google Data Analytics Professional certificate](https://www.coursera.org/professional-certificates/google-data-analytics#courses). For this project, I chose "Case Study 3," where I had the opportunity to build my own case study instead of working with one of the two pre-designed options. I mainly used Visual Studio Code for querying, PostgreSQL for database management, and Google Sheets for visualizations. <br>
+_([Click here for the full scenario description](https://github.com/JoshuaYerdon/Google_Capstone/blob/main/Assets/Project%20Scenario.png))_
 
 ## Topic
 I chose the [TED Talk](https://www.kaggle.com/datasets/ashishjangra27/ted-talks) dataset from [Kaggle](https://www.kaggle.com/) for my project . This dataset contains information about various TED Talks, including details like the speaker, duration, views, and categories of the talks. The problem I will be exploring is identifying which topics are most effective at attracting viewers, which speakers are best suited for gaining viewership, and analyzing other factors that contribute to a TED Talk's popularity. My chosen metrics will help assess the impact of different speakers and topics on viewer engagement, the following metrics have been chosen:  
 - The following metrics have been chosen to talk about:
+
     - Total yearly viewership 
     - Total yearly speeches given
     - Individual Speakers
@@ -23,7 +25,7 @@ I chose the [TED Talk](https://www.kaggle.com/datasets/ashishjangra27/ted-talks)
 The data for this project will primarily come from CSV files, they can be found [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/SVC%20Files) or in this project's repository.The data has been slightly modified into two CSV files, labeled "ted_talks_stats" and "ted_talks," as I wanted multiple tables for my database rather than just one. I have included a copy of the original if anyone would like to look at it, labeled "ted_talks_original". This dataset has a 10/10 usability score from Kaggle, which indicates it is highly credible and usable. The license for this dataset can be found [HERE](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Project Findings & Analysis
-###### *All of the preojects visualizations are accessable both [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/Assets)and in the repository.*
+###### *All of the projects visualizations are accessable [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/Assets).*
 
 ## 1: Years With Most Speech Views
 I started by wondering which years had the most views and thought it might show steady growth over time. To figure this out, I wrote a query to find the years with the highest total speech views. To do this:
@@ -96,7 +98,7 @@ ORDER BY
 The data suggests that audiences may be drawn to speeches based on their favorite speakers. To identify the ideal speakers and topics with a greater certainty, we need a method that reveals how much people enjoy a particular speech or speaker.
 
 ![Most Author Speeches](/Assets/Most%20Author%20Speeches%20Given.png) <br>
-**Visualization of Average Views by Month** - **_[Click here to access the chart](/Assets/Most%20Author%20Speeches%20Given.png)_**
+**Visualization of Most Author Speeches** - **_[Click here to access the chart](/Assets/Most%20Author%20Speeches%20Given.png)_**
 
 ## 4: Adjusted Likes and Views Value
 What is an "Adjust Likes Value" you may ask? This is a method I developed to fairly evaluate speeches, rather than just looking at views or likes by themselves. 
@@ -157,7 +159,7 @@ ORDER BY
     RANDOM()
 ```
 
-Additionally I have made a query that bases the decision off of their Adjust Likes Value too:
+Additionally I have made a query that bases the decision off of their Adjusted Likes Value too:
 
 ```SQL
 SELECT
