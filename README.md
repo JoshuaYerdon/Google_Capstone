@@ -20,7 +20,7 @@ I chose the [TED Talk](https://www.kaggle.com/datasets/ashishjangra27/ted-talks)
 - 3: My insights will identify the ideal speakers, topics, timing for events, and more!
 
 ## Data
-The data for this project will primarily come from CSV files, they can be found [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/SVC%20Files) or in this project's repository.The data has been slightly modified into two CSV files, labeled "ted_talks_stats" and "ted_talks," as I wanted multiple tables for my database rather than just one. I have included a copy of the original if anyone would like to look at it, labeled "ted_talks_original". This dataset has a 10/10 usability score from Kaggle, which indicates it is highly credible and usable. The license for this dataset can be found [HERE](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The data for this project will primarily come from CSV files, they can be found [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/SVC%20Files) or in this project's repository. The data has been slightly modified into two CSV files, labeled **"ted_talks_stats"** and **"ted_talks,"** as I wanted multiple tables for my database rather than just one. I have included a copy of the original if anyone would like to look at it, labeled **"ted_talks_original"**. This dataset has a 10/10 usability score from Kaggle, which indicates it is highly credible and usable. The license for this dataset can be found [HERE](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 ## Project Findings & Analysis
 ###### *All of the projects visualizations are accessable [HERE](https://github.com/JoshuaYerdon/Ted-Talk-Capstone/tree/main/Assets).*
@@ -28,8 +28,8 @@ The data for this project will primarily come from CSV files, they can be found 
 ## 1: Years With Most Speech Views
 I started by wondering which years had the most views and thought it might show steady growth over time. To figure this out, I wrote a query to find the years with the highest total speech views. To do this:
 
-- I used SUM to calculate the total views for all speeches, naming the result "total_yearly_views".
-- Extracted the year from the "talk_date" field.
+- I used SUM to calculate the total views for all speeches, naming the result **"total_yearly_views"**.
+- Extracted the year from the **"talk_date"** field.
 - Grouped the data by year and sorted it in descending order to display the years with the most views first.
 
 ```SQL
@@ -53,9 +53,9 @@ Below is a chart displaying the results of this query. As you can see, years lik
 
 ## 2: Most Speeches Given per Year
 Following the results of the previous section, I wrote the following query to show me how many speeches were given per year. To achieve this:
-- I used **COUNT** to count the number of speeches giveen for all years, naming the result **"num_of_yearly_speeches"**.
+- I used **COUNT** to count the number of speeches given for all years, naming the result **"num_of_yearly_speeches"**.
 - Extracted the year from the **"talk_date"** field.
-- Grouped the data by year and sorted it in descending order to display the years with the most total speches given.
+- Grouped the data by year and sorted it in descending order to display the years with the most total speeches given.
 
 ```SQL
 SELECT
@@ -111,7 +111,7 @@ FROM
 LEFT JOIN ted_talks_stats ON ted_talks.link = ted_talks_stats.link
 ORDER BY
     adjusted_like_value DESC
-LIMIT 5;
+LIMIT 5
 ```
 
 This query calculates the ratio of views to likes for each speech, producing a score ranging from 30 to 36. A score of 30 represents the lowest possible rating, indicating that the audience was not particularly engaged. On the other hand, a score of 36 is the highest possible, representing a near perfect audience approval. Based on this query, we can identify the top rated speeches: <br>
